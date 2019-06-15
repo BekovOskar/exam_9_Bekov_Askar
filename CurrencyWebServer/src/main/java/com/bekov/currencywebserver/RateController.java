@@ -32,7 +32,7 @@ public class RateController {
     @GetMapping("/rate")
     public List<Rate> downloadRateInfo() throws IOException, ParserConfigurationException, SAXException {
         getRate(uri_rate);
-        //getRate(uri_rates);
+        getRate(uri_rates);
 
         return rateList;
     }
